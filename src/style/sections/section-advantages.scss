@@ -7,7 +7,9 @@
   .image-wrapper-left {
     position: absolute;
     left: 1px;
+    max-width: 216px;
     .image-wrapper_img {
+      width: 100%;
     }
     .icon-wrapper {
     }
@@ -15,36 +17,35 @@
   .image-wrapper-right {
     position: absolute;
     right: 1px;
+    max-width: 197px;
     .image-wrapper_img {
+      width: 100%;
     }
     .icon-wrapper {
     }
   }
   .page-width {
-
     .title-inner {
-        display: flex;
-        justify-content: center;
-        margin-bottom: 60px;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 60px;
       .title {
-        color: var(--3, #ED268D);
-/* H2 */
-font-family: "The Wild Things";
-font-size: 110px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
-text-transform: uppercase;
+        color: var(--3, #ed268d);
+        font-family: "The Wild Things";
+        font-size: 110px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-transform: uppercase;
       }
       .title1 {
-        color: var(--2, #FFF);
-/* H2 */
-font-family: "The Wild Things";
-font-size: 110px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
-text-transform: uppercase;
+        color: var(--2, #fff);
+        font-family: "The Wild Things";
+        font-size: 110px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-transform: uppercase;
       }
     }
     .items-inner {
