@@ -1,0 +1,67 @@
+@mixin disabled {
+	cursor: not-allowed;
+	pointer-events: none;
+	opacity: 0.4;
+}
+
+@mixin focus {
+	&:focus {
+		outline: none;
+	}
+
+	&:focus-visible:not(.disabled-visual-focus) {
+		outline: 1px auto #000;
+	}
+}
+
+@mixin removed-top-button-margins {
+	margin-top: 0;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+@mixin screen-reader-text {
+	border: 0;
+	clip: rect(1px, 1px, 1px, 1px);
+	clip-path: inset(50%);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+	word-wrap: normal !important;
+
+	&:focus {
+		background-color: #eee;
+		clip: auto !important;
+		clip-path: none;
+		color: #444;
+		display: block;
+		font-size: 16px;
+		height: auto;
+		left: 5px;
+		line-height: normal;
+		padding: 15px 23px 14px;
+		text-decoration: none;
+		top: 5px;
+		width: auto;
+		z-index: 100000; /* Above WP toolbar. */
+	}
+}
+$xxl: 'min-width: 1280px';
+$xl: 'min-width: 1152px';
+$lg: 'min-width: 1024px';
+$lg-990: 'min-width: 990px';
+$md: 'min-width: 768px';
+$sm: 'min-width: 568px';
+$xs: 'min-width: 430px';
+
+$less-xxl: 'max-width: 1280px';
+$less-xl: 'max-width: 1152px';
+$less-lg: 'max-width: 1024px';
+$less-md: 'max-width: 768px';
+$less-sm: 'max-width: 568px';
+$less-xs: 'max-width: 430px';

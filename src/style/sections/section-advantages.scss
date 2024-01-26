@@ -1,0 +1,82 @@
+.advantages {
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  padding: 50px 0 100px 0;
+  .image-wrapper-left {
+    position: absolute;
+    left: 1px;
+    .image-wrapper_img {
+    }
+    .icon-wrapper {
+    }
+  }
+  .image-wrapper-right {
+    position: absolute;
+    right: 1px;
+    .image-wrapper_img {
+    }
+    .icon-wrapper {
+    }
+  }
+  .page-width {
+
+    .title-inner {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 60px;
+      .title {
+        color: var(--3, #ED268D);
+/* H2 */
+font-family: "The Wild Things";
+font-size: 110px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+text-transform: uppercase;
+      }
+      .title1 {
+        color: var(--2, #FFF);
+/* H2 */
+font-family: "The Wild Things";
+font-size: 110px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+text-transform: uppercase;
+      }
+    }
+    .items-inner {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      gap: 20px;
+
+      .advantages__item {
+        width: 100%;
+        padding: 0px 20px;
+        min-width: 320px;
+        .item_img {
+          width: 90px;
+          height: 90px;
+          margin-bottom: 20px;
+        }
+        .item_heading {
+          margin-bottom: 14px;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+        }
+        .item_description {
+          text-align: center;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 300;
+          line-height: 26px;
+        }
+      }
+    }
+  }
+}
