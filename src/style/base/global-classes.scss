@@ -4,7 +4,7 @@
   margin: 0 auto;
   padding: 0 35px;
   width: 100%;
-  max-width: 1290px;
+  max-width: 1310px;
 
   @media ($lg) {
     padding: 0 15px;
@@ -60,22 +60,4 @@
   font-style: italic;
 }
 
-.round-stroke {
-  display: inline-block;
-  position: relative;
 
-  &::after {
-    content: "";
-    position: absolute;
-    bottom: -10%;
-    left: -3%;
-    width: 106%;
-    height: 100%;
-    border-radius: 100%;
-    border: 1px solid;
-
-    @media ($md) {
-      border: 2px solid;
-    }
-  }
-}

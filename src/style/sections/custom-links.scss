@@ -1,0 +1,40 @@
+.custom-links {
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 50px 0 147px 0;
+  .page-width {
+    .title {
+      font-family: "The-W-T";
+      font-size: 110px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      text-transform: uppercase;
+      text-align: center;
+      margin-bottom: 50px;
+      strong {
+        font-family: "The-W-T-S";
+      }
+    }
+    .wrapper__links {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 30px;
+      .link {
+        max-width: 580px;
+        height: 180px;
+        width: 100%;
+        border-radius: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff;
+        .icon-link {
+            
+        }
+      }
+    }
+  }
+}

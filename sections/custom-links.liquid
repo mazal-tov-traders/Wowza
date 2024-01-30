@@ -1,0 +1,90 @@
+<section class="custom-links">
+  <div class="page-width">
+    {% if section.settings.title != blank %}
+      <h2 class="title" style="color: {{ section.settings.color_title_label }};">
+        {{ section.settings.title }}
+      </h2>
+    {% endif %}
+    <div class="wrapper__links">
+      {% for block in section.blocks %}
+        {% case block.type %}
+          {% when 'link' %}
+            {%- if block.settings.link != blank -%}
+              <a
+                {% if block.settings.link == blank %}
+                  role="link" aria-disabled="true"
+                {% else %}
+                  href="{{ block.settings.link }}"
+                {% endif %}
+                class="link"
+              >
+                {%- if block.settings.image != blank -%}
+                  <img class="icon-link" src="{{ block.settings.image | img_url:  'original'}}">
+                {%- endif -%}
+              </a>
+            {%- endif -%}
+        {% endcase %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{%- style -%}
+  #shopify-section-{{ section.id }}{
+    .custom-links{
+      background-image: url({{ section.settings.image | image_url: width: 3840 }});
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+  }
+{%- endstyle -%}
+
+{% schema %}
+{
+  "name": "Links",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+          "type": "image_picker",
+          "id": "image",
+          "label": "background image"
+        },
+    {
+      "type": "richtext",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+      "type": "color",
+      "id": "color_title_label",
+      "label": "Color Title Label",
+      "default": "#ed268d"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "link",
+      "name": "Link",
+      "limit": 5,
+      "settings": [
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Link"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Icon Link"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Links"
+    }
+  ]
+}
+{% endschema %}

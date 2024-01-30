@@ -273,6 +273,20 @@
         onload="this.media='all'"
       >
     {%- endif -%}
+  <style>
+    @font-face {
+      font-family: "The-W-T";
+      font-style: normal;
+      font-weight: 700;
+      src: url('{{ "the-wild-things-bold.ttf" | asset_url }}') format("truetype");
+    }
+    @font-face {
+      font-family: "The-W-T-S";
+      font-style: normal;
+      font-weight: 700;
+      src: url('{{ "the-wild-things-script-bold.ttf" | asset_url }}') format("truetype");
+    }
+  </style>
 
     <script>
       document.documentElement.className = document.documentElement.className.replace('no-js', 'js');

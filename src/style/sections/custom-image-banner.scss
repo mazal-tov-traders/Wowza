@@ -1,0 +1,99 @@
+.custom-image-banner {
+  background-color: rgba(237, 38, 141, 1);
+  position: relative;
+  overflow: hidden;
+  max-width: 1920px;
+  margin: 0 auto;
+  width: 100%;
+  @media screen and (max-width: 791px) {
+    padding-bottom: 80px;
+  }
+
+  .custom-image-banner__image-mob {
+    @media screen and (min-width: 791px) {
+      display: none;
+    }
+    img {
+        position: sticky;
+        width: 100%;
+        z-index: 2;
+    }
+    svg{
+        position: absolute;
+        right: 0;
+        left: 0;
+        top: 0;
+        width: 100%;
+        z-index: 0;
+    }
+  }
+  .page-width {
+    @media screen and (min-width: 791px) {
+        display: none;
+      }
+    .custom-image-banner__wrapper {
+      display: flex;
+      justify-content: center;
+      padding-top: 35px;
+      .title {
+        font-family: "The-W-T";
+        font-size: 160px;
+        font-weight: 700;
+        line-height: 90px;
+        letter-spacing: 0em;
+        text-align: center;
+        display: flex;
+        
+        @media screen and (max-width: 501px) {
+          font-size: 100px;
+          line-height: 60px;
+        }
+      }
+    }
+  }
+}
+
+.desctop-banner {
+  display: flex;
+  justify-content: space-between;
+  @media screen and (max-width: 791px) {
+    display: none;
+  }
+  &__content {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 50%;
+    .title {
+      align-items: center;
+      display: flex;
+      font-family: "The-W-T";
+      font-size: 160px;
+      font-weight: 700;
+      letter-spacing: 0;
+      line-height: 90px;
+      padding-right: 20px;
+      min-width: 450px;
+      padding-right: 20px;
+      padding-left: 35px;
+      @media screen and (max-width: 970px) {
+        min-width: 366px;
+        font-size: 128px;
+        line-height: 70px;
+      }
+    }
+  }
+  .custom-image-banner__image-desc {
+    position: relative;
+    img {
+      position: sticky;
+      z-index: 2;
+    }
+    svg {
+      position: absolute;
+      right: 20px;
+      top: 0;
+      height: 100%;
+      z-index: 0;
+    }
+  }
+}

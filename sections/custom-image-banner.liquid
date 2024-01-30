@@ -1,0 +1,123 @@
+<section class="custom-image-banner">
+  <div class="desctop-banner">
+    <div class="desctop-banner__content">
+      {% for block in section.blocks %}
+        {% case block.type %}
+          {% when 'title' %}
+            {%- if block.settings.title != blank -%}
+              <h1 class="title">
+                {{ block.settings.title -}}
+              </h1>
+            {%- endif -%}
+        {% endcase %}
+      {% endfor %}
+    </div>
+    {%- if section.settings.image_desc != blank -%}
+      <div class="custom-image-banner__image-desc">
+        <svg xmlns="http://www.w3.org/2000/svg" width="1055" height="600" viewBox="0 0 1055 600" fill="none">
+          <path d="M1240 265C1240 607.417 962.417 885 620 885C277.583 885 0 607.417 0 265C0 -77.4165 277.583 -355 620 -355C962.417 -355 1240 -77.4165 1240 265Z" fill="#8F4081"/>
+        </svg>
+        <img src="{{ section.settings.image_desc | img_url:  'original'}}">
+      </div>
+    {% endif %}
+  </div>
+  {%- if section.settings.image_mob != blank -%}
+    <div class="custom-image-banner__image-mob">
+      <svg width="390" height="330" viewBox="0 0 390 330" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M435 90C435 222.548 327.548 330 195 330C62.4517 330 -45 222.548 -45 90C-45 -42.5483 62.4517 -150 195 -150C327.548 -150 435 -42.5483 435 90Z" fill="#8F4081"/>
+      </svg>
+      <img src="{{ section.settings.image_mob | img_url:  'original'}}">
+    </div>
+  {% endif %}
+  <div class="page-width">
+    <div class="custom-image-banner__wrapper">
+      {% for block in section.blocks %}
+        {% case block.type %}
+          {% when 'title' %}
+            {%- if block.settings.title != blank -%}
+              <h1 class="title">
+                {{ block.settings.title -}}
+              </h1>
+            {%- endif -%}
+        {% endcase %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{%- style -%}
+  #shopify-section-{{ section.id }}{
+    {% for block in section.blocks %}
+      {% case block.type %}
+        {% when 'title' %}
+        .title {
+          color: {{ block.settings.color_title_label }};
+          strong {
+            font-family: "The-W-T-S";
+          }
+        }
+      {% endcase %}
+    {% endfor %}
+  }
+{%- endstyle -%}
+
+{% schema %}
+{
+  "name": "Custom Image Banner",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image_desc",
+      "label": "Desctop Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_mob",
+      "label": "Mobile Image"
+    },
+    {
+      "type": "select",
+      "id": "position_image",
+      "options": [
+        {
+          "value": " ",
+          "label": "left"
+        },
+        {
+          "value": "_reverse",
+          "label": "right"
+        }
+      ],
+      "default": " ",
+      "label": "Position Image"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "title",
+      "name": "title",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "richtext",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "color",
+          "id": "color_title_label",
+          "label": "Color Title Label",
+          "default": "#fff"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Custom Image Banner"
+    }
+  ]
+}
+{% endschema %}

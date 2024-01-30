@@ -1,0 +1,91 @@
+<section class="image-content">
+  {% for block in section.blocks %}
+    {% case block.type %}
+      {% when 'content' %}
+        <div class="wrapper__content">
+          {%- if block.settings.title != blank -%}
+            <div class="wrapper__title">
+              {%- if block.settings.icon != blank -%}
+                <img class="icon-content" src="{{ block.settings.icon | img_url:  'original'}}">
+              {%- endif -%}
+              <h2 class="title">
+                {{ block.settings.title -}}
+              </h2>
+            </div>
+          {%- endif -%}
+          {%- if block.settings.content != blank -%}
+            <h3 class="content">
+              {{ block.settings.content -}}
+            </h3>
+          {%- endif -%}
+        </div>
+      {% when 'media' %}
+        <div class="wrapper__media">
+          {%- if block.settings.image != blank -%}
+            <img src="{{ block.settings.image | img_url:  'original'}}">
+          {%- endif -%}
+        </div>
+    {% endcase %}
+  {% endfor %}
+</section>
+
+{% schema %}
+{
+  "name": "Image Content",
+  "class": "section",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "content",
+      "name": "Content",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "icon",
+          "label": "Icon"
+        },
+        {
+          "type": "richtext",
+          "id": "title",
+          "label": "Titel"
+        },
+        {
+          "type": "color",
+          "id": "color_title_label",
+          "label": "Color Titel Label",
+          "default": "#fff"
+        },
+        {
+          "type": "richtext",
+          "id": "content",
+          "label": "Content"
+        },
+        {
+          "type": "color",
+          "id": "color_content_label",
+          "label": "Color Content Label",
+          "default": "#fff"
+        }
+      ]
+    },
+    {
+      "type": "media",
+      "name": "Media",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Image Content"
+    }
+  ]
+}
+{% endschema %}

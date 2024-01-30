@@ -1,0 +1,88 @@
+.image-content {
+  max-width: 1920px;
+  margin: 0 auto;
+  width: 100%;
+  background-color: #fff3e1;
+  display: flex;
+  flex-direction: row-reverse;
+  @media screen and (max-width: 1096px) {
+    flex-direction: column;
+  }
+
+  .wrapper__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 125px 0;
+    @media screen and (max-width: 1440px) {
+      padding-left: 65px;
+    }
+    @media screen and (max-width: 1096px) {
+      margin: 125px auto;
+      padding: 0px 35px;
+    }
+    @media screen and (max-width: 600px) {
+        margin: 40px auto 80px;
+      }
+   
+    .wrapper__title {
+      position: relative;
+      .icon-content {
+        position: absolute;
+        top: -26px;
+        left: -52px;
+        @media screen and (max-width: 600px) {
+          top: -39px;
+        }
+      }
+      .title {
+        font-family: "The-W-T";
+        font-size: 160px;
+        font-weight: 700;
+        line-height: 90px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #ed268d;
+        position: sticky;
+        margin-bottom: 30px;
+        strong {
+          font-family: "The-W-T-S";
+        }
+        @media screen and (max-width: 600px) {
+          font-size: 100px;
+          line-height: 60px;
+        }
+      }
+    }
+    .content {
+      max-width: 600px;
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 26px;
+      letter-spacing: 0em;
+      text-align: left;
+      position: static;
+      z-index: 1;
+    }
+  }
+  .wrapper__media {
+    max-width: 800px;
+    z-index: 1;
+    @media screen and (min-width: 1440px) {
+      margin: -75px 75px 28px 120px;
+    }
+    @media screen and (min-width: 1240px) {
+      margin: -75px 60px 28px 60px;
+    }
+    @media screen and (min-width: 1097px) {
+      margin: -75px 30px 28px 30px;
+    }
+    @media screen and (max-width: 1096px) {
+      margin: -50px auto 0 ;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+}

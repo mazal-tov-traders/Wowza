@@ -22,25 +22,6 @@ $color-dark-grey: #4d4d4e;
 
 $color-element-hover: #383633;
 
-@mixin round-stroke {
-  display: inline-block;
-  position: relative;
-
-  &::after {
-    content: "";
-    position: absolute;
-    bottom: -10%;
-    left: -3%;
-    width: 106%;
-    height: 100%;
-    border-radius: 100%;
-    border: 1px solid;
-
-    @media ($md) {
-      border: 2px solid;
-    }
-  }
-}
 
 @mixin text-style-text-headline-1 {
   font-family: $font-family-Awesome-Serif;
@@ -51,9 +32,7 @@ $color-element-hover: #383633;
   text-decoration: none;
   text-transform: uppercase;
 
-  strong {
-    @include round-stroke;
-  }
+ 
 }
 
 @mixin text-style-text-headline-2 {
@@ -76,9 +55,7 @@ $color-element-hover: #383633;
     font-weight: 400;
   }
 
-  strong {
-    @include round-stroke;
-  }
+ 
 }
 
 @mixin text-style-text-headline-3 {
