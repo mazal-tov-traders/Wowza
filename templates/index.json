@@ -1,23 +1,8 @@
 {
   "sections": {
-    "image_banner": {
-      "type": "image-banner",
-      "settings": {
-        "image": "shopify:\/\/shop_images\/Frame_1212250.jpg",
-        "image_overlay_opacity": 0,
-        "image_height": "large",
-        "desktop_content_position": "bottom-center",
-        "show_text_box": false,
-        "desktop_content_alignment": "center",
-        "color_scheme": "inverse",
-        "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": false,
-        "show_text_below": false
-      }
-    },
     "featured_collection": {
       "type": "featured-collection",
+      "disabled": true,
       "settings": {
         "title": "Featured products",
         "heading_size": "h2",
@@ -43,10 +28,142 @@
         "padding_top": 44,
         "padding_bottom": 36
       }
+    },
+    "custom_image_banner_fcRMj7": {
+      "type": "custom-image-banner",
+      "blocks": {
+        "title_dWM44D": {
+          "type": "title",
+          "settings": {
+            "title": "<p>A <strong>wowza<\/strong><br\/>in every bite<\/p>",
+            "color_title_label": "#fff"
+          }
+        }
+      },
+      "block_order": [
+        "title_dWM44D"
+      ],
+      "settings": {
+        "image_desc": "shopify:\/\/shop_images\/Ellipse_13_1.png",
+        "image_mob": "shopify:\/\/shop_images\/Ellipse_11_1.png",
+        "position_image": "_reverse"
+      }
+    },
+    "section_advantages_Cxc6FM": {
+      "type": "section-advantages",
+      "blocks": {
+        "item_XV6DiQ": {
+          "type": "item",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/2.png",
+            "heading": "ALLERGEN FRIENDLY",
+            "color_heading_label": "#fff",
+            "font_size": "",
+            "description": "Lorem ipsum dolor sit amet consectetur. Netus consectetur ac urna urna.",
+            "color_description_label": "#fff",
+            "font_size1": ""
+          }
+        },
+        "item_JPejJj": {
+          "type": "item",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/3.png",
+            "heading": "GLUTEN FREE",
+            "color_heading_label": "#fff",
+            "font_size": "",
+            "description": "Lorem ipsum dolor sit amet consectetur. Netus consectetur ac urna urna.",
+            "color_description_label": "#fff",
+            "font_size1": ""
+          }
+        },
+        "item_7MXedT": {
+          "type": "item",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/1.png",
+            "heading": "NON GMO",
+            "color_heading_label": "#fff",
+            "font_size": "",
+            "description": "Non-GMO, organic ingredients. No added filled, refined sugars or junk — ever.",
+            "color_description_label": "#fff",
+            "font_size1": ""
+          }
+        }
+      },
+      "block_order": [
+        "item_XV6DiQ",
+        "item_JPejJj",
+        "item_7MXedT"
+      ],
+      "settings": {
+        "title": "<p><strong>LESS FAT<\/strong> THAN POTATO CHIPS<\/p>",
+        "color_title_label": "#ED268D",
+        "color_title1_label": "#fff",
+        "font_size": "",
+        "img": "shopify:\/\/shop_images\/Crisp_SeaSalt_3_565c3952-bc6f-4ca3-9d19-ab0b312d2d5c.png",
+        "img1": "shopify:\/\/shop_images\/Crisp_SeaSalt_1_1.png"
+      }
+    },
+    "custom_links_fRrF7X": {
+      "type": "custom-links",
+      "blocks": {
+        "link_QWjUUg": {
+          "type": "link",
+          "settings": {
+            "link": "shopify:\/\/pages\/contact",
+            "image": "shopify:\/\/shop_images\/image_9.png"
+          }
+        },
+        "link_fkX9WW": {
+          "type": "link",
+          "settings": {
+            "link": "shopify:\/\/pages\/contact",
+            "image": "shopify:\/\/shop_images\/image_10.png"
+          }
+        }
+      },
+      "block_order": [
+        "link_QWjUUg",
+        "link_fkX9WW"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/fon.jpg",
+        "title": "<p>Find your <strong>Wowza<\/strong><\/p>",
+        "color_title_label": "#ed268d"
+      }
+    },
+    "custom_image_content_Rc3Aa8": {
+      "type": "custom-image-content",
+      "blocks": {
+        "media_8A6Rr4": {
+          "type": "media",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Ellipse_14.png"
+          }
+        },
+        "content_DHNiBE": {
+          "type": "content",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/Vector_Smart_Object_1.png",
+            "title": "<p>HI! WE'RE<br\/>wowza<\/p>",
+            "color_title_label": "#fff",
+            "content": "<p>Here at Wowza, we've always bonded over our love for cooking. And WOW do we have our tradition down! We put the perfect record on, represent with our personalized aprons and voila, invent the perfect recipe.<\/p><p>In our kitchen we like to improvise. We focus on dreaming up the most original snacks with the tastiest ingredients we can find. In our minds, great tasting treats are limitless! <\/p><p><strong>We always find ways to come up with the most appetizing concoctions and our Crunchy Rice Crsips are nothing short of amazing. It took some perfecting but we got them to a place and now all we can say is Wowza!<\/strong><\/p>",
+            "color_content_label": "#fff"
+          }
+        }
+      },
+      "block_order": [
+        "media_8A6Rr4",
+        "content_DHNiBE"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
-    "image_banner",
-    "featured_collection"
+    "featured_collection",
+    "custom_image_banner_fcRMj7",
+    "section_advantages_Cxc6FM",
+    "custom_links_fRrF7X",
+    "custom_image_content_Rc3Aa8"
   ]
 }

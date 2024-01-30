@@ -48,6 +48,8 @@
 }
 
 .header-wrapper {
+	max-width: 1920px;
+	margin: 0 auto;
 	position: sticky;
 	top: 0;
 	display: flex;
