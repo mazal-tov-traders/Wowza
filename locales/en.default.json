@@ -58,7 +58,7 @@
     }
   },
   "newsletter": {
-    "label": "Email",
+    "label": "Enter your email",
     "success": "Thanks for subscribing",
     "button_label": "Subscribe"
   },
@@ -507,6 +507,24 @@
       "max_characters": "{{ max_chars }} characters max",
       "send_on": "YYYY-MM-DD",
       "send_on_label": "Send on (optional)"
+    }
+  },
+  "shopify": {
+    "checkout": {
+      "contact": {
+        "email_placeholder": "Email",
+        "email_label": "Email"
+      }
+    },
+    "attributes": {
+      "email": "Email"
+    }
+  },
+  "customer_accounts": {
+    "B2B": {
+      "locations": {
+        "contact_email": "Email"
+      }
     }
   }
 }

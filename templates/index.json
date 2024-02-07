@@ -36,7 +36,7 @@
           "type": "title",
           "settings": {
             "title": "<p>A <strong>wowza<\/strong><br\/>in every bite<\/p>",
-            "color_title_label": "#fff"
+            "color_title_label": "#ffffff"
           }
         }
       },
@@ -57,10 +57,10 @@
           "settings": {
             "img": "shopify:\/\/shop_images\/2.png",
             "heading": "ALLERGEN FRIENDLY",
-            "color_heading_label": "#fff",
+            "color_heading_label": "#ffffff",
             "font_size": "",
             "description": "Lorem ipsum dolor sit amet consectetur. Netus consectetur ac urna urna.",
-            "color_description_label": "#fff",
+            "color_description_label": "#ffffff",
             "font_size1": ""
           }
         },
@@ -69,10 +69,10 @@
           "settings": {
             "img": "shopify:\/\/shop_images\/3.png",
             "heading": "GLUTEN FREE",
-            "color_heading_label": "#fff",
+            "color_heading_label": "#ffffff",
             "font_size": "",
             "description": "Lorem ipsum dolor sit amet consectetur. Netus consectetur ac urna urna.",
-            "color_description_label": "#fff",
+            "color_description_label": "#ffffff",
             "font_size1": ""
           }
         },
@@ -81,10 +81,10 @@
           "settings": {
             "img": "shopify:\/\/shop_images\/1.png",
             "heading": "NON GMO",
-            "color_heading_label": "#fff",
+            "color_heading_label": "#ffffff",
             "font_size": "",
             "description": "Non-GMO, organic ingredients. No added filled, refined sugars or junk — ever.",
-            "color_description_label": "#fff",
+            "color_description_label": "#ffffff",
             "font_size1": ""
           }
         }
@@ -96,8 +96,8 @@
       ],
       "settings": {
         "title": "<p><strong>LESS FAT<\/strong> THAN POTATO CHIPS<\/p>",
-        "color_title_label": "#ED268D",
-        "color_title1_label": "#fff",
+        "color_title_label": "#ed268d",
+        "color_title1_label": "#ffffff",
         "font_size": "",
         "img": "shopify:\/\/shop_images\/Crisp_SeaSalt_3_565c3952-bc6f-4ca3-9d19-ab0b312d2d5c.png",
         "img1": "shopify:\/\/shop_images\/Crisp_SeaSalt_1_1.png"
@@ -145,9 +145,9 @@
           "settings": {
             "icon": "shopify:\/\/shop_images\/Vector_Smart_Object_1.png",
             "title": "<p>HI! WE'RE<br\/>wowza<\/p>",
-            "color_title_label": "#fff",
+            "color_title_label": "#ffffff",
             "content": "<p>Here at Wowza, we've always bonded over our love for cooking. And WOW do we have our tradition down! We put the perfect record on, represent with our personalized aprons and voila, invent the perfect recipe.<\/p><p>In our kitchen we like to improvise. We focus on dreaming up the most original snacks with the tastiest ingredients we can find. In our minds, great tasting treats are limitless! <\/p><p><strong>We always find ways to come up with the most appetizing concoctions and our Crunchy Rice Crsips are nothing short of amazing. It took some perfecting but we got them to a place and now all we can say is Wowza!<\/strong><\/p>",
-            "color_content_label": "#fff"
+            "color_content_label": "#ffffff"
           }
         }
       },
@@ -157,6 +157,82 @@
       ],
       "settings": {
       }
+    },
+    "custom_collection_6DfwFB": {
+      "type": "custom-collection",
+      "blocks": {
+        "product_Gq3HzT": {
+          "type": "product",
+          "settings": {
+            "color_border_image_product": "#ED268D",
+            "image": "shopify:\/\/shop_images\/Rectangle_4133620_3.png",
+            "heading": "<p>Korean BBQ<\/p>",
+            "color_heading_label": "#2E2A2C",
+            "content": "<p>Wowza Crunchy Rice Crisps<\/p>",
+            "color_content_label": "#2E2A2C"
+          }
+        },
+        "product_96VWmF": {
+          "type": "product",
+          "settings": {
+            "color_border_image_product": "#ED268D",
+            "image": "shopify:\/\/shop_images\/Rectangle_4133620_2.png",
+            "heading": "<p>Buttery Pancake<\/p>",
+            "color_heading_label": "#2E2A2C",
+            "content": "<p>Wowza Crunchy Rice Crisps<\/p>",
+            "color_content_label": "#2E2A2C"
+          }
+        },
+        "product_zc98GV": {
+          "type": "product",
+          "settings": {
+            "color_border_image_product": "#ED268D",
+            "image": "shopify:\/\/shop_images\/Rectangle_4133620_4.png",
+            "heading": "<p>Sea Salt<\/p>",
+            "color_heading_label": "#2E2A2C",
+            "content": "<p>Wowza Crunchy Rice Crisps<\/p>",
+            "color_content_label": "#2E2A2C"
+          }
+        },
+        "product_pLrjDQ": {
+          "type": "product",
+          "settings": {
+            "color_border_image_product": "#ED268D",
+            "image": "shopify:\/\/shop_images\/Rectangle_4133620_5.png",
+            "heading": "<p>Sweet Maui Onion<\/p>",
+            "color_heading_label": "#2E2A2C",
+            "content": "<p>Wowza Crunchy Rice Crisps<\/p>",
+            "color_content_label": "#2E2A2C"
+          }
+        },
+        "product_hAi6DY": {
+          "type": "product",
+          "settings": {
+            "color_border_image_product": "#ED268D",
+            "image": "shopify:\/\/shop_images\/Rectangle_4133620_6.png",
+            "heading": "<p>Fuego Lime<\/p>",
+            "color_heading_label": "#2E2A2C",
+            "content": "<p>Wowza Crunchy Rice Crisps<\/p>",
+            "color_content_label": "#2E2A2C"
+          }
+        }
+      },
+      "block_order": [
+        "product_Gq3HzT",
+        "product_96VWmF",
+        "product_zc98GV",
+        "product_pLrjDQ",
+        "product_hAi6DY"
+      ],
+      "settings": {
+        "title": "<p>EAT ONE THING A DAY THAT MAKES YOU <strong>Wowza<\/strong><\/p>",
+        "color_title_label": "#ed268d",
+        "sub_title": "<p>Meet our Wowza Crunchy Rice Crisps <\/p>",
+        "color_sub_title_label": "#ed268d",
+        "content": "<p>We crisp them up and sprinkle them with <br\/>out of this world <strong>NATURAL<\/strong> flavors and spices<\/p>",
+        "color_content_label": "#2E2A2C",
+        "color_stong_content_label": "#ED268D"
+      }
     }
   },
   "order": [
@@ -164,6 +240,7 @@
     "custom_image_banner_fcRMj7",
     "section_advantages_Cxc6FM",
     "custom_links_fRrF7X",
-    "custom_image_content_Rc3Aa8"
+    "custom_image_content_Rc3Aa8",
+    "custom_collection_6DfwFB"
   ]
 }
